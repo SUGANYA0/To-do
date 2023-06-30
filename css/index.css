@@ -1,3 +1,21 @@
+.checkbox-round {
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid rgb(0, 134, 218);
+    appearance: none;
+    cursor: pointer;
+}
+#div{
+    display:flex;
+    margin-left: 0%;
+    
+}
+#di{
+    display: flex;
+    width: 5%;
+    height: 70%;
+    justify-content: center;
+}
 #task{
     color:rgb(0, 134, 218);
     width: 100%;
@@ -10,8 +28,7 @@
     font-weight: 600;
 }
 #nav{
-    height: 13%;
-    /* border: 1px solid black; */
+    height: 9%;
     width: 100%;display: flex;
     justify-content: space-between;
 }
@@ -19,7 +36,6 @@
     height: 100%;
     color: rgb(0, 134, 218);
     font-size: large;
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,11 +43,10 @@
 }
 #main{
     width: 98%;
-    height: 60%;
+    height: 100%;
     background-color: rgb(243,242,241);
 }
 #menu{
     height: 100%;
     width: 100%;
-    /* border: 1px solid black; */
 }
