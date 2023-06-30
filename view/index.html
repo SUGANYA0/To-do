@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #newt{
+            background-color: white;
+            height: 26%;
+            width: 100%;
+            align-items: center;
+            display: flex;
+        }
+        #addtask{
+            border: none;
+            background-color: white;
+            color: rgb(0, 134, 218);
+            width: 100%;
+            height: 100%;
+            margin-left: 1%;
+            text-align: left;
+        }
+    </style>
     <link rel="stylesheet" href="../css/index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,15 +42,18 @@
                     ↑↓Sort&emsp;
                 </div>
             </div>
-            <div style="height: 34%;margin-left: 2%;margin-right: 2%;">
-                <div style="background-color: white;height: 26%;width: 100%;display: flex;"> 
+            <div style="height: 46%;margin-left: 2%;margin-right: 2%;">
+                <div style="background-color: white;height: 16%;width: 100%;display: flex;"> 
                     <div style="display: flex;justify-content: center;height: 100%;align-items: center;width: 100%;">
-                        <button style="border: none;background-color: white;color: rgb(0, 134, 218);width: 100%;height: 100%;margin-left: 1%;text-align: left;">+&emsp;Add a task</button>
+                        <button onclick="newtask()" id="addtask">&plus;&emsp;Add a task</button>
                     </div>
                 </div>
-                <!-- <div style="background-color: white;height: 26%;width: 100%;"></div> -->
+                <hr style="color: rgb(243, 242, 241);border: 1px solid rgb(243, 242, 241);">
+                <div id="add" style="height: 95%;overflow: auto;">
+                </div>
             </div>
         </div>
+        <script type="text/javascript" src="../js/todo.js"></script>
     </div>
 </body>
 </html>
