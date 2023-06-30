@@ -53,4 +53,36 @@ function print(){
         add.appendChild(create);
         }
     }
+    button.onclick=function () {
+        var completedArray=[];
+        for(let b=0;b<array.length;b++){
+            if(array[b].name===text.innerText){
+                array[b].status=!array[b].status;
+                console.log(array[b].status);
+                if(array[b].status===true || array[b].status===false){
+                    completedArray.push(array[b]);
+                    console.log(completedArray);
+                    // break;
+                }
+            }
+        }
+        for( const obj of completedArray){
+            if(obj.status===true){
+                var complete=document.createElement('div');
+                if(j==0){
+                    t=document.createTextNode(" Completed ");
+                    complete.appendChild(t);
+                }
+                complete.appendChild(create);
+                text.style.textDecoration="line-through";
+                completed.appendChild(complete);
+                j++;
+            }
+            else{
+                text.style.textDecoration="none";
+                add.appendChild(create);
+            }
+        }
+    }
+    i++;
 }
